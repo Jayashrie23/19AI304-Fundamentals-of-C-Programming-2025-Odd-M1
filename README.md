@@ -26,7 +26,26 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a = 25;
+    float b = 12.5;
+    char c = 'A';
+    char str[] = "Hello, C Programming";
+
+    printf("Integer literal value   : %d\n", a);
+    printf("Float literal value     : %.2f\n", b);
+    printf("Character literal value : %c\n", c);
+    printf("String literal value    : %s\n", str);
+
+    return 0;
+}
+```
 # Output:
+<img width="1461" height="577" alt="image" src="https://github.com/user-attachments/assets/c66a2473-80a1-4f3e-85e0-3f0e6dc76693" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +76,23 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+#define PI 3.14
+
+int main() 
+{
+    const int MAX = 100;
+
+    printf("Value of macro constant PI = %.2f\n", PI);
+    printf("Value of constant variable MAX = %d\n", MAX);
+
+    return 0;
+}
+```
 # Output:
+<img width="1211" height="451" alt="image" src="https://github.com/user-attachments/assets/935af08f-2507-4338-b704-56c3e7bb6b9b" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,8 +116,28 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a = 10;
+    float b = 5.25f;
+    double c = 123.456789;
+    char d = 'C';
+
+    printf("Integer value   : %d\n", a);
+    printf("Float value     : %.2f\n", b);
+    printf("Double value    : %.6lf\n", c);
+    printf("Character value : %c\n", d);
+
+    return 0;
+}
+```
 # Output:
+<img width="1222" height="558" alt="image" src="https://github.com/user-attachments/assets/ad219cab-fd3d-4b2c-929f-5a10e7b366e9" />
+
 # Result: 
+Thus, the program was implemented and executed successfully, and the required output was obtained.
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
@@ -120,7 +175,39 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+int main() {
+    int a, b;
+    printf("Enter two integers:\n");
+    scanf("%d %d", &a, &b);
+    printf("\n--- Arithmetic Operations ---\n");
+    printf("Addition        = %d\n", a + b);
+    printf("Subtraction     = %d\n", a - b);
+    printf("Multiplication  = %d\n", a * b);
+
+    if (b != 0)
+     {
+        printf("Division        = %d\n", a / b);
+        printf("Remainder       = %d\n", a % b);
+    } else 
+    {
+        printf("Division and Remainder not possible (division by zero)\n");
+    }
+    printf("\n--- Bitwise Operations ---\n");
+    printf("Bitwise AND     = %d\n", a & b);
+    printf("Bitwise OR      = %d\n", a | b);
+    printf("Bitwise XOR     = %d\n", a ^ b);
+    printf("Left Shift (a<<1)  = %d\n", a << 1);
+    printf("Right Shift (a>>1) = %d\n", a >> 1);
+    printf("Bitwise NOT of a  = %d\n", ~a);
+
+    return 0;
+}
+```
 # Output:
+<img width="1197" height="647" alt="image" src="https://github.com/user-attachments/assets/0dd3088f-56ed-4e34-b188-ed38efe40296" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +252,29 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+#include <ctype.h>
+int main() {
+    char ch;
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    (isdigit(ch)) ? 
+        printf("The character is a Digit.\n") :
+    (isalpha(ch)) ?
+        ((ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+          ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') ?
+            printf("The character is a Vowel.\n") :
+            printf("The character is a Consonant.\n")) :
+        printf("The character is a Special Symbol.\n");
+
+    return 0;
+}
+```
 # Output:
+<img width="1307" height="597" alt="image" src="https://github.com/user-attachments/assets/c68e50cd-9928-4d80-885a-ae51ee0d8561" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
